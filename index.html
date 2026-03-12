@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctología Láser Tampico | Tecnología láser para tu bienestar</title>
+    <meta name="description" content="Proctología Láser Tampico. Tratamientos modernos, sin cicatrices, seguros y con rápida recuperación. Tecnología láser avanzada para cuidar tu colon y recto.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2F4964',
+                            50: '#e8edf2',
+                            100: '#d1dbe5',
+                            200: '#a3b7cb',
+                            300: '#7593b1',
+                            400: '#476f97',
+                            500: '#2F4964',
+                            600: '#273d54',
+                            700: '#1f3144',
+                            800: '#172534',
+                            900: '#0f1924',
+                        },
+                        secondary: {
+                            DEFAULT: '#8FA5B8',
+                            50: '#f4f6f8',
+                            100: '#e9edf1',
+                            200: '#d3dbe3',
+                            300: '#bdc9d5',
+                            400: '#a6b7c7',
+                            500: '#8FA5B8',
+                            600: '#728493',
+                            700: '#56636e',
+                            800: '#394249',
+                            900: '#1d2125',
+                        },
+                        neutral1: '#7C878E',
+                        neutral2: '#DDE3E8',
+                    },
+                    fontFamily: {
+                        'heading': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <img src="assets/img/logo-proctologia.jpeg" alt="Proctología Láser Tampico" class="h-16 w-auto">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#inicio" class="text-neutral1 hover:text-primary transition-colors font-medium">Inicio</a>
+                    <a href="#proctologia-laser" class="text-neutral1 hover:text-primary transition-colors font-medium">Proctología Láser</a>
+                    <a href="#padecimientos" class="text-neutral1 hover:text-primary transition-colors font-medium">Padecimientos</a>
+                    <a href="#tratamientos" class="text-neutral1 hover:text-primary transition-colors font-medium">Tratamientos</a>
+                    <a href="#faq" class="text-neutral1 hover:text-primary transition-colors font-medium">FAQ</a>
+                    <a href="#contacto" class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-primary-600 transition-colors font-medium">Agenda tu cita</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-neutral2">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-2">
+                    <a href="#inicio" class="px-4 py-2 text-neutral1 hover:bg-primary-50 rounded-lg">Inicio</a>
+                    <a href="#proctologia-laser" class="px-4 py-2 text-neutral1 hover:bg-primary-50 rounded-lg">Proctología Láser</a>
+                    <a href="#padecimientos" class="px-4 py-2 text-neutral1 hover:bg-primary-50 rounded-lg">Padecimientos</a>
+                    <a href="#tratamientos" class="px-4 py-2 text-neutral1 hover:bg-primary-50 rounded-lg">Tratamientos</a>
+                    <a href="#faq" class="px-4 py-2 text-neutral1 hover:bg-primary-50 rounded-lg">FAQ</a>
+                    <a href="#contacto" class="px-4 py-2 bg-primary text-white rounded-lg text-center">Agenda tu cita</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="inicio" class="relative pt-20 min-h-screen">
+        <div id="carousel" class="relative h-[calc(100vh-5rem)] overflow-hidden">
+            <!-- Slides -->
+            <div class="carousel-slides relative h-full">
+                <!-- Slide 1 -->
+                <div class="carousel-slide absolute inset-0 opacity-100" data-slide="0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/70"></div>
+                    <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1920&q=80" alt="Consultorio médico moderno" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                            <div class="max-w-2xl">
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+                                    Proctología Láser de Última Generación
+                                </h1>
+                                <p class="text-lg md:text-xl text-neutral2 mb-4">
+                                    Tratamientos modernos, sin cicatrices, seguros y con rápida recuperación.
+                                </p>
+                                <p class="text-base md:text-lg text-secondary-200 mb-8">
+                                    Tecnología láser avanzada para cuidar tu colon y recto sin cirugías agresivas, con menos dolor y mejores resultados.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        Contactar por WhatsApp
+                                    </a>
+                                    <a href="https://www.doctoralia.com.mx/" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-neutral2 text-primary font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-white">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                        Agendar en Doctoralia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide absolute inset-0 opacity-0" data-slide="1">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1920&q=80" alt="Tecnología médica avanzada" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                            <div class="max-w-2xl">
+                                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+                                    Tecnología Láser de Alta Precisión
+                                </h2>
+                                <p class="text-lg md:text-xl text-neutral2 mb-8">
+                                    Contamos con tecnología láser de última generación diseñada para procedimientos proctológicos seguros, precisos y eficaces.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        Contactar por WhatsApp
+                                    </a>
+                                    <a href="https://www.doctoralia.com.mx/" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-neutral2 text-primary font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-white">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                        Agendar en Doctoralia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide absolute inset-0 opacity-0" data-slide="2">
+                    <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1920&q=80" alt="Atención médica personalizada" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"></div>
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                            <div class="max-w-2xl">
+                                <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+                                    Atención Profesional, Ética y Humana
+                                </h2>
+                                <p class="text-lg md:text-xl text-neutral2 mb-8">
+                                    Brindamos un trato médico profesional enfocado en mejorar tu calidad de vida con confidencialidad y empatía.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        Contactar por WhatsApp
+                                    </a>
+                                    <a href="https://www.doctoralia.com.mx/" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-neutral2 text-primary font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl border-2 border-white">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                        Agendar en Doctoralia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3">
+                <button class="carousel-dot active w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors" data-slide="2"></button>
+            </div>
+
+            <!-- Carousel Arrows -->
+            <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/20 hover:bg-white/30 rounded-full transition-colors backdrop-blur-sm">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 bg-white/20 hover:bg-white/30 rounded-full transition-colors backdrop-blur-sm">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Qué es la Proctología Láser -->
+    <section id="proctologia-laser" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Especialidad</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    ¿Qué es la Proctología Láser?
+                </h2>
+                <p class="text-neutral1 max-w-3xl mx-auto text-lg">
+                    La proctología láser es una especialidad médica que utiliza tecnología láser avanzada para tratar enfermedades del colon, recto y ano de forma menos invasiva, con mayor precisión, menor dolor y una recuperación más rápida.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Sin cortes grandes</h3>
+                    <p class="text-neutral1">Procedimientos mínimamente invasivos que no requieren incisiones extensas.</p>
+                </div>
+
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Menos sangrado</h3>
+                    <p class="text-neutral1">La tecnología láser cauteriza mientras trabaja, reduciendo significativamente el sangrado.</p>
+                </div>
+
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Menor dolor postoperatorio</h3>
+                    <p class="text-neutral1">Molestias mínimas y bien toleradas comparado con cirugías tradicionales.</p>
+                </div>
+
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Procedimientos ambulatorios</h3>
+                    <p class="text-neutral1">Regresa a casa el mismo día sin necesidad de hospitalización prolongada.</p>
+                </div>
+
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Recuperación rápida</h3>
+                    <p class="text-neutral1">Retoma tus actividades diarias en pocos días, dependiendo del caso.</p>
+                </div>
+
+                <div class="bg-neutral2/30 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Preservación de tejidos</h3>
+                    <p class="text-neutral1">Mayor precisión que minimiza el daño a tejidos sanos circundantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Padecimientos que Tratamos -->
+    <section id="padecimientos" class="py-20 bg-neutral2/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Diagnóstico</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    Padecimientos que Tratamos
+                </h2>
+                <p class="text-neutral1 max-w-2xl mx-auto">
+                    Ofrecemos tratamiento especializado para diversas enfermedades del colon, recto y ano.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hemorroides -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-neutral2">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Hemorroides</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Son venas inflamadas en el ano o recto. Pueden causar dolor, ardor, comezón, sangrado al evacuar o sensación de "bolita". Suelen relacionarse con estreñimiento, esfuerzo al evacuar, embarazo o estar mucho tiempo sentado en el baño y el estrés.
+                    </p>
+                </div>
+
+                <!-- Fístulas anales -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-neutral2">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Fístulas Anales</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Son conductos anormales que se forman entre el interior del ano y la piel. Generalmente aparecen después de un absceso. Pueden causar secreción constante, mal olor, dolor e infecciones repetidas.
+                    </p>
+                </div>
+
+                <!-- Abscesos anorrectales -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-neutral2">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Abscesos Anorrectales</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Son acumulaciones de pus causadas por una infección en las glándulas del ano. Se manifiestan con dolor intenso, inflamación, enrojecimiento, fiebre y malestar general. Requieren atención médica inmediata.
+                    </p>
+                </div>
+
+                <!-- Quiste pilonidal -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-neutral2">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Quiste Pilonidal</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Es una infección crónica que aparece en el pliegue entre los glúteos, cerca del coxis. Se asocia al crecimiento de vello bajo la piel y puede causar dolor, inflamación y secreción. Es más común en personas jóvenes y en quienes permanecen mucho tiempo sentados.
+                    </p>
+                </div>
+
+                <!-- Verrugas anales -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow border border-neutral2">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-3">Verrugas Anales (VPH)</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Son lesiones causadas por el Virus del Papiloma Humano. Pueden aparecer dentro o alrededor del ano y no siempre duelen, pero sí pueden crecer, multiplicarse y, en algunos casos, asociarse a lesiones de mayor riesgo si no se tratan.
+                    </p>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bg-primary p-8 rounded-2xl flex flex-col justify-center items-center text-center">
+                    <h3 class="text-xl font-heading font-semibold text-white mb-4">¿Tienes alguno de estos síntomas?</h3>
+                    <p class="text-secondary-200 mb-6 text-sm">No normalices las molestias anales. Agenda una valoración con un especialista certificado.</p>
+                    <a href="#contacto" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-neutral2 transition-colors">
+                        Solicitar valoración
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tratamientos Láser -->
+    <section id="tratamientos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Nuestra Tecnología</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    Tratamientos Láser Especializados
+                </h2>
+                <p class="text-neutral1 max-w-3xl mx-auto">
+                    Cada padecimiento requiere un tratamiento específico. En Proctología Láser utilizamos tecnología especializada para ofrecer soluciones personalizadas y seguras.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- HELP -->
+                <div class="bg-gradient-to-br from-primary to-primary-600 p-8 rounded-2xl text-white">
+                    <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-medium mb-6">HEMORROIDES</div>
+                    <h3 class="text-2xl font-heading font-bold mb-2">HELP</h3>
+                    <p class="text-secondary-200 text-sm mb-4">Hemorrhoidal Laser Procedure</p>
+                    <p class="text-white/90 mb-6">
+                        Tratamiento láser que actúa desde el interior de la hemorroide, cerrando la vena que la alimenta.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-3">¿Cómo funciona?</h4>
+                        <p class="text-white/80 text-sm">El láser cierra la irrigación sanguínea. La hemorroide se desinflama, no se retira tejido y no hay cortes.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-3">Beneficios:</h4>
+                        <ul class="space-y-2 text-sm text-white/80">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menos dolor
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Procedimiento ambulatorio
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Rápida recuperación
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menor riesgo de complicaciones
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FILAC -->
+                <div class="bg-gradient-to-br from-secondary to-secondary-600 p-8 rounded-2xl text-white">
+                    <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-medium mb-6">FÍSTULA ANAL</div>
+                    <h3 class="text-2xl font-heading font-bold mb-2">FILAC</h3>
+                    <p class="text-white/70 text-sm mb-4">Fistula Laser Closure</p>
+                    <p class="text-white/90 mb-6">
+                        Tratamiento que sella la fístula desde el interior mediante energía láser de forma precisa y controlada.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Ventajas:</h4>
+                        <ul class="space-y-2 text-sm text-white/80">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Preserva el esfínter anal
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menor riesgo de incontinencia
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Procedimiento preciso
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menor dolor postoperatorio
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SILAC -->
+                <div class="bg-gradient-to-br from-neutral1 to-gray-600 p-8 rounded-2xl text-white">
+                    <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-sm font-medium mb-6">QUISTE PILONIDAL</div>
+                    <h3 class="text-2xl font-heading font-bold mb-2">SILAC</h3>
+                    <p class="text-white/70 text-sm mb-4">Sinus Laser Closure</p>
+                    <p class="text-white/90 mb-6">
+                        Permite tratar el quiste pilonidal desde el interior, sin heridas extensas ni cicatrices grandes.
+                    </p>
+                    <div>
+                        <h4 class="font-semibold mb-3">Beneficios:</h4>
+                        <ul class="space-y-2 text-sm text-white/80">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menor cicatriz
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Menor riesgo de infección
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Recuperación más rápida
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-green-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Sin heridas extensas
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recomendaciones del Especialista -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-secondary-300 font-semibold text-sm uppercase tracking-wider">Consejos</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mt-2 mb-4">
+                    Recomendaciones del Especialista
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">No automedicarse</h3>
+                    <p class="text-secondary-200 text-sm">Evita tomar medicamentos sin prescripción médica.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Acudir a valoración</h3>
+                    <p class="text-secondary-200 text-sm">Ante dolor, sangrado o molestias, consulta a un especialista.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Dieta rica en fibra</h3>
+                    <p class="text-secondary-200 text-sm">Mantén una alimentación balanceada con suficiente fibra.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Hidratación adecuada</h3>
+                    <p class="text-secondary-200 text-sm">Bebe suficiente agua durante el día.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">No normalizar síntomas</h3>
+                    <p class="text-secondary-200 text-sm">Las molestias anales no son normales, busca ayuda.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Actividad física</h3>
+                    <p class="text-secondary-200 text-sm">Mantén una rutina de ejercicio frecuente.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Chequeos oportunos</h3>
+                    <p class="text-secondary-200 text-sm">Realiza revisiones médicas preventivas.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Especialista certificado</h3>
+                    <p class="text-secondary-200 text-sm">Acude solo con un Coloproctólogo CERTIFICADO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">FAQ</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    Preguntas Frecuentes
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Los tratamientos con láser duelen?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">La mayoría de los tratamientos con láser generan mucho menos dolor en comparación con cirugías tradicionales. En muchos casos, las molestias son mínimas y bien toleradas.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Son cirugías?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Son procedimientos mínimamente invasivos. No requieren cortes grandes ni resección de tejido, ya que el láser actúa desde el interior del padecimiento.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Son procedimientos ambulatorios?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Sí. La mayoría de los tratamientos con proctología láser son ambulatorios, lo que permite al paciente regresar a casa el mismo día.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Cuánto tiempo dura la recuperación?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">La recuperación suele ser más rápida que con técnicas convencionales. Muchos pacientes retoman sus actividades normales en pocos días, dependiendo del caso.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Todos los pacientes son candidatos a tratamientos con láser?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">No todos los casos son iguales. Es necesaria una valoración médica especializada para determinar si el paciente es candidato y cuál es el tratamiento más adecuado.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Necesito incapacidad o reposo prolongado?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Generalmente no. En la mayoría de los casos no se requiere incapacidad prolongada, aunque el especialista indicará recomendaciones específicas según el procedimiento realizado.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Qué padecimientos pueden tratarse con proctología láser?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Hemorroides, fístulas anales, fisuras, abscesos, quiste pilonidal y verrugas anales, entre otros padecimientos del colon, recto y ano.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿El tratamiento con láser es seguro?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Sí. La tecnología láser utilizada es segura, precisa y controlada, siempre que sea aplicada por un especialista capacitado y tras una evaluación médica adecuada.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="border border-neutral2 rounded-xl overflow-hidden">
+                    <button class="accordion-btn w-full px-6 py-5 text-left flex items-center justify-between bg-white hover:bg-neutral2/30 transition-colors">
+                        <span class="font-semibold text-primary">¿Por qué es importante acudir a consulta y no automedicarse?</span>
+                        <svg class="accordion-icon w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content px-6 bg-neutral2/20">
+                        <p class="py-4 text-neutral1">Porque síntomas como dolor, sangrado o comezón anal pueden corresponder a distintos padecimientos. Un diagnóstico correcto es clave para un tratamiento eficaz y seguro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section class="py-20 bg-neutral2/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Misión -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary mb-4">Misión</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Brindar atención especializada en proctología láser mediante tratamientos modernos, seguros y mínimamente invasivos, enfocados en mejorar la calidad de vida de nuestros pacientes, utilizando tecnología de última generación y un trato médico profesional, ético y humano.
+                    </p>
+                </div>
+
+                <!-- Visión -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary mb-4">Visión</h3>
+                    <p class="text-neutral1 text-sm leading-relaxed">
+                        Ser un centro de referencia en proctología láser en la región, reconocido por su innovación tecnológica, resultados clínicos confiables y atención integral al paciente, contribuyendo al bienestar del colon y recto con soluciones médicas avanzadas y una recuperación más rápida.
+                    </p>
+                </div>
+
+                <!-- Valores -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-14 h-14 bg-neutral1 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary mb-4">Valores</h3>
+                    <ul class="text-neutral1 text-sm space-y-2">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Profesionalismo médico
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Ética y confidencialidad
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Innovación tecnológica láser
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Seguridad del paciente
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Empatía y trato humano
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Formulario -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Contacto</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    Agenda tu Consulta
+                </h2>
+                <p class="text-neutral1 max-w-2xl mx-auto">
+                    Estamos listos para atenderte. Llena el formulario o contáctanos directamente.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Formulario -->
+                <div class="bg-neutral2/30 p-8 rounded-2xl">
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-6">Envíanos un mensaje</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-neutral1 mb-2">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label for="telefono" class="block text-sm font-medium text-neutral1 mb-2">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                        </div>
+                        <div>
+                            <label for="motivo" class="block text-sm font-medium text-neutral1 mb-2">Motivo de consulta</label>
+                            <select id="motivo" name="motivo" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white">
+                                <option value="">Selecciona una opción</option>
+                                <option value="hemorroides">Hemorroides</option>
+                                <option value="fistula">Fístula anal</option>
+                                <option value="quiste">Quiste pilonidal</option>
+                                <option value="absceso">Absceso anorrectal</option>
+                                <option value="verrugas">Verrugas anales (VPH)</option>
+                                <option value="otro">Otro padecimiento</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-neutral1 mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"></textarea>
+                        </div>
+                        <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Agenda tu cita ahora
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div>
+                    <div class="bg-primary p-8 rounded-2xl text-white mb-8">
+                        <h3 class="text-xl font-heading font-semibold mb-6">Información de Contacto</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Hospital Ángeles Tampico</p>
+                                    <p class="text-secondary-200 text-sm">Prolongación Av. Hidalgo 5003</p>
+                                    <p class="text-secondary-200 text-sm">Consultorio 660, 6° piso</p>
+                                    <p class="text-secondary-200 text-sm">Tampico, México, CP 89330</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Teléfonos</p>
+                                    <p class="text-secondary-200 text-sm">(833) 205 11 01</p>
+                                    <p class="text-secondary-200 text-sm">(833) 115 02 66</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="text-secondary-200 text-sm hover:text-white transition-colors">Enviar mensaje directo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="rounded-2xl overflow-hidden shadow-lg h-64">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.5252371267!2d-97.87847562502146!3d22.27027797969186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7fc5f5f5f5f5f%3A0x5f5f5f5f5f5f5f5f!2sHospital%20%C3%81ngeles%20Tampico!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="flex items-center gap-3">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-14%20at%201.31.29%20AM%20%281%29-TtWzT3LKSfmX4RQpAXPKioJSoyGmFh.jpeg" alt="Proctología Láser Tampico" class="h-12 w-auto bg-white rounded-lg p-1">
+                    <div>
+                        <p class="text-white font-semibold">Proctología Láser</p>
+                        <p class="text-secondary-300 text-sm">Tecnología láser para tu bienestar</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-secondary-200 text-sm">Hospital Ángeles Tampico | Consultorio 660</p>
+                    <p class="text-secondary-300 text-xs mt-1">Prolongación Av. Hidalgo 5003, Tampico, México</p>
+                </div>
+                <div class="flex justify-end gap-4">
+                    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="text-secondary-300 text-sm">&copy; 2026 Proctología Láser Tampico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/message/RSMSKI54UMUBD1" target="_blank" class="whatsapp-float fixed bottom-6 right-6 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl transition-colors z-50">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
