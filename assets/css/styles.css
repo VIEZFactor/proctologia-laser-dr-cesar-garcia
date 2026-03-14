@@ -42,3 +42,7 @@ html {
 .accordion-icon.open {
     transform: rotate(180deg);
 }
+
+.pristine-error{
+  color: red;
+}

@@ -29,6 +29,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="assets/lib/pristine.js"  type="text/javascript"></script>
+</head>
 
     <script>
         tailwind.config = {
@@ -753,18 +755,45 @@
                 <!-- Formulario -->
                 <div class="bg-neutral2/30 p-8 rounded-2xl">
                     <h3 class="text-xl font-heading font-semibold text-primary mb-6">Envíanos un mensaje</h3>
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label for="nombre" class="block text-sm font-medium text-neutral1 mb-2">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                    <form
+                        id="contact-form"
+                        action="#"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        novalidate
+                        class="space-y-6"
+                    >
+                        <div class="form-group">
+                            <label for="name" class="block text-sm font-medium text-neutral1 mb-2">Nombre completo</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name" 
+                                data-pristine-required-message="Este campo es requerido"
+                                class="form-control w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                required
+                            >
                         </div>
-                        <div>
-                            <label for="telefono" class="block text-sm font-medium text-neutral1 mb-2">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                        <div class="form-group">
+                            <label for="phone" class="block text-sm font-medium text-neutral1 mb-2">Teléfono</label>
+                            <input
+                                class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                type="tel"                                
+                                name="phone"
+                                id="phone" 
+                                data-pristine-required-message="Este campo es requerido"
+                                required
+                            >
                         </div>
-                        <div>
-                            <label for="motivo" class="block text-sm font-medium text-neutral1 mb-2">Motivo de consulta</label>
-                            <select id="motivo" name="motivo" required class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white">
+                        <div class="form-group">
+                            <label for="subject" class="block text-sm font-medium text-neutral1 mb-2">Motivo de consulta</label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white"
+                                data-pristine-required-message="Este campo es requerido"
+                                required
+                            >
                                 <option value="">Selecciona una opción</option>
                                 <option value="hemorroides">Hemorroides</option>
                                 <option value="fistula">Fístula anal</option>
@@ -774,13 +803,44 @@
                                 <option value="otro">Otro padecimiento</option>
                             </select>
                         </div>
-                        <div>
-                            <label for="mensaje" class="block text-sm font-medium text-neutral1 mb-2">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"></textarea>
+                        <div class="form-group">
+                            <label for="message" class="block text-sm font-medium text-neutral1 mb-2">Mensaje</label>
+                            <textarea
+                                class="w-full px-4 py-3 border border-neutral2 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                                style="resize: none;"                                
+                                name="message"
+                                id="message"
+                                rows="5" 
+                                data-pristine-required-message="Este campo es requerido"
+                                required
+                            ></textarea>
                         </div>
-                        <a href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all">                            
+                        
+                        <div
+                            id="alert-success"
+                            role="alert"
+                            aria-live="polite"
+                            class="mb-4 rounded-md bg-green-100 border border-green-400 text-green-800 p-4"
+                            style="display: none;"
+                        >
+                        </div>
+
+                        <div
+                            id="alert-danger"
+                            role="alert"
+                            aria-live="assertive"
+                            class="mb-4 rounded-md bg-red-100 border border-red-400 text-red-800 p-4"
+                            style="display: none;"
+                        >
+                        </div>
+
+                        <button
+                            id="btn-send-form"
+                            type="submit"
+                            class="btn-send-form w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all"
+                        >
                             Enviar mensaje
-                        </a>
+                        </button>
                     </form>
                 </div>
 
@@ -874,5 +934,6 @@
     </a>
 
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
