@@ -65,8 +65,8 @@ $mail->setFrom('no-responder@alyviaproctologialaser.com', $nameSite);
 
 // Multiple recipient email addresses and names
 // Primary recipients
-// $mail->addAddress('drgarcia_proctologo@hotmail.com');
-$mail->addAddress('villarrealbli01@gmail.com');
+$mail->addAddress('alyviaproctologialaser@gmail.com');
+// $mail->addAddress('villarrealbli01@gmail.com');
 // $mail->addAddress('RECIPIENT_EMAIL_ADDRESS_2', 'RECIPIENT_NAME_2');
 
 // Adding CC recipients
