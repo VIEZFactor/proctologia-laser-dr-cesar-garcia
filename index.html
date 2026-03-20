@@ -503,6 +503,104 @@
         </div>
     </section>
 
+    <!-- Galería -->
+    <section id="galeria" class="py-20 bg-neutral2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Nuestras instalaciones</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mt-2 mb-4">
+                    Galería
+                </h2>
+                <p class="text-neutral1 max-w-2xl mx-auto">
+                    Conoce nuestras instalaciones y equipo de última generación para brindarte la mejor atención.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <!-- Imagen 1 -->
+                <div class="gallery-item cursor-pointer group" data-index="0">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=400&h=400&fit=crop&q=80" alt="Galería imagen 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="gallery-item cursor-pointer group" data-index="1">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=400&fit=crop&q=80" alt="Galería imagen 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 3 -->
+                <div class="gallery-item cursor-pointer group" data-index="2">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=400&h=400&fit=crop&q=80" alt="Galería imagen 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 4 -->
+                <div class="gallery-item cursor-pointer group" data-index="3">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=400&h=400&fit=crop&q=80" alt="Galería imagen 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 5 -->
+                <div class="gallery-item cursor-pointer group" data-index="4">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&h=400&fit=crop&q=80" alt="Galería imagen 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 6 -->
+                <div class="gallery-item cursor-pointer group" data-index="5">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=400&fit=crop&q=80" alt="Galería imagen 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 7 -->
+                <div class="gallery-item cursor-pointer group" data-index="6">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&h=400&fit=crop&q=80" alt="Galería imagen 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 8 -->
+                <div class="gallery-item cursor-pointer group" data-index="7">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=400&h=400&fit=crop&q=80" alt="Galería imagen 8" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 9 -->
+                <div class="gallery-item cursor-pointer group" data-index="8">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&h=400&fit=crop&q=80" alt="Galería imagen 9" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+                <!-- Imagen 10 -->
+                <div class="gallery-item cursor-pointer group" data-index="9">
+                    <div class="aspect-square overflow-hidden rounded-lg shadow-md bg-white">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=400&fit=crop&q=80" alt="Galería imagen 10" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Galería -->
+    <div id="gallery-modal" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/90 p-4">
+        <button id="modal-close" class="absolute top-4 right-4 p-2 text-white hover:text-secondary transition-colors">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <button id="modal-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/20 hover:bg-white/30 rounded-full transition-colors">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button id="modal-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/20 hover:bg-white/30 rounded-full transition-colors">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        <img id="modal-image" src="" alt="Imagen ampliada" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
+    </div>
+
     <!-- Recomendaciones del Especialista -->
     <section class="py-20 bg-primary">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
