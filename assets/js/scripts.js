@@ -111,16 +111,16 @@ const modalNext = document.getElementById('modal-next');
 let currentImageIndex = 0;
 
 const galleryImages = [
-    'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200&q=80',
-    'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=80',
-    'https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1200&q=80',
-    'https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1200&q=80',
-    'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80',
-    'https://images.unsplash.com/photo-1551076805-e1869033e561?w=1200&q=80',
-    'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200&q=80',
-    'https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=1200&q=80',
-    'https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&q=80',
-    'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&q=80'
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/alyvia-tratamos.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/alyvia-ubicacion.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/beneficios-de-help.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/beneficios-filac.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/como-funciona-help.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/que-es-filac.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/que-es-fistula-anal.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/recomendaciones-despues-de-help.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/senales-que-muchos-ignoran.jpeg',
+    'https://alyviaproctologialaser.com/assets/img/gallery/full/sintomas-a-reconocer.jpeg'
 ];
 
 function openModal(index) {
